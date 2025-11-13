@@ -1,0 +1,12 @@
+# config.yaml
+
+#We include a metadata file for sample identification which includes where the sample data is stored
+metadata_file: example_data/metadata/example_metadata.csv
+
+#Below the output directory is specified (outputs of the workflow will be stored here)
+output_dir: example_data/example_output
+
+#We indicate where the databases are stored 
+database_dir: ref_databases
+hostile_dir:  ref_databases/hostile/human-t2t-hla-argos985 
+
