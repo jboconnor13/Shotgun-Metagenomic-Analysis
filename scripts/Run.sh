@@ -8,8 +8,7 @@ cd ..
 snakemake -s Snakefile \
     --configfile config/config.yaml \
     --cores 8 \
-    --use-conda \
-    --conda-prefix /Users/johnoconnor/snakemake_envs
+    --use-conda
 
 #-s specifes the snakefile to use
 #--configfile secifies the config file to use

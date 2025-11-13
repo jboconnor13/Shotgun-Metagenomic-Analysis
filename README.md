@@ -10,8 +10,18 @@ This repository contains the entire shotgun metagenomic analysis pipeline first 
 
 ## Conda Environment Setup
 
+First create a new envirnment and activate it 
 ```bash
 conda create -n shotgun_analysis
 conda activate shotgun_analysis
 conda config --set channel_priority strict
+```
+
+## Run the Snakemake pipeline
+```bash
+cd scripts
+
+chmod +x Run.sh
+
+bash Run.sh
 ```
