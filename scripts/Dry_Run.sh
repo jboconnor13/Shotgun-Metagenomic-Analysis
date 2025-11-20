@@ -5,7 +5,7 @@ cd ..
 
 #This script runs the entire shotgun pipeline
 
-snakemake -s Snakefile \
+snakemake -s snakefile \
     --configfile config/config.yaml \
     -n \
     --use-conda
