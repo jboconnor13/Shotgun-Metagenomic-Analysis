@@ -21,12 +21,15 @@ chmod +x Alpine_Environment_Creation.sh
 sbatch Alpine_Environment_Creation.sh
 ```
 
-##Kraken Database download
-The hostile database is availble in the directory but the kraken database needs to be downloaded
+##Database download
+The hostile and kraken databases need to be downloaded
+
 ```bash
 chmod +x Alpine_Kraken_Database_Download.sh
-
 sbatch Alpine_Kraken_Database_Download.sh
+
+chmod +x Alpine_Hostile_Database_Download.sh
+sbatch Alpine_Hostile_Database_Download.sh
 ```
 
 ## Config, metadata, and adapter file adjustment 

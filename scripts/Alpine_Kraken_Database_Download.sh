@@ -19,6 +19,10 @@ module load python/3.10.2
 
 conda activate shotgun_analysis
 
+mkdir ../ref_databases/kraken
+
+cd ../ref_databases/kraken
+
 #The standard database is downloaded from the kraken website
 wget https://genome-idx.s3.amazonaws.com/kraken/k2_standard_20251015.tar.gz
 
