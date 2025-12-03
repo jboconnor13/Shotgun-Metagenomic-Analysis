@@ -1,12 +1,22 @@
 # config.yaml
 
-#We include a metadata file for sample identification which includes where the sample data is stored
+#Includes a metadata file for sample identification which includes where the sample data is stored
 metadata_file: example_data/metadata/example_metadata.csv
 
 #Below the output directory is specified (outputs of the workflow will be stored here)
 output_dir: example_data/example_output
 
-#We indicate where the databases are stored 
+#Indicates where the adapters are stored
+adapter_dir: adapters/adapters.fa
+
+#Inbdicates parameters for trimming
+trim_left: 20
+trim_right: 140
+kmer_length: 20
+
+#Indicate where the databases are stored 
 database_dir: ref_databases
 hostile_dir:  ref_databases/hostile/human-t2t-hla-argos985 
+kraken_db_loc: "ref_databases/minikraken"
+
 
