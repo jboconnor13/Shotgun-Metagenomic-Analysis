@@ -1,0 +1,2 @@
+sample_id,fwd_reads,rev_reads
+ZIM089,example_data/example_input/ZIM089_S91_L001_R1_001.fastq.gz,example_data/example_input/ZIM089_S91_L001_R2_001.fastq.gz
