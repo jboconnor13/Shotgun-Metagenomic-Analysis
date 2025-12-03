@@ -17,6 +17,6 @@ kmer_length: 20
 #Indicate where the databases are stored 
 database_dir: ref_databases
 hostile_dir:  ref_databases/hostile/human-t2t-hla-argos985 
-kraken_db_loc: "ref_databases/minikraken"
+kraken_db_loc: "ref_databases/kraken"
 
 
