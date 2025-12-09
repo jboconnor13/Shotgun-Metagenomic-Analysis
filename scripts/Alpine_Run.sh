@@ -9,7 +9,7 @@
 #SBATCH --cpus-per-task=16
 #SBATCH --time=05:00:00 # Time limit days-hrs:min:sec
 #SBATCH --qos=normal
-#SBATCH --mem=20gb # Memory limit
+#SBATCH --mem=150G
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-user=john.2.oconnor@cuanschutz.edu
 
@@ -25,6 +25,7 @@ cd ..
 #This script runs the entire shotgun pipeline
 
 snakemake -s snakefile \
+    --latency-wait 1800 \
     --configfile config/config.yaml \
     --cores 8 \
     --use-conda \

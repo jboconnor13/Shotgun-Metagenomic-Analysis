@@ -17,9 +17,7 @@ module purge
 module load miniforge
 module load python/3.10.2
 
-conda activate shotgun_analysis
-
-mkdir ../ref_databases/kraken
+mkdir -p ../ref_databases/kraken
 
 cd ../ref_databases/kraken
 

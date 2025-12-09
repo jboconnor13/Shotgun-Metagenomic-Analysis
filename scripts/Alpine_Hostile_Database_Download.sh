@@ -3,7 +3,7 @@
 #SBATCH --partition=amilan
 #SBATCH --account=amc-general
 #SBATCH --output=/scratch/alpine/joconnor@xsede.org/Shotgun-Metagenomic-Analysis/slurm_outputs/slurm-%j.out
-#SBATCH --job-name=kraken_db_download
+#SBATCH --job-name=hostile_db_download
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=4
