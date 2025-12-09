@@ -22,5 +22,8 @@ conda create -n shotgun_analysis
 #The environment is activated
 conda activate shotgun_analysis
 
+#Snakemake is installed
+conda install -c conda-forge snakemake
+
 #The environment proiorities are set to strict for snakemake
 conda config --set channel_priority strict
