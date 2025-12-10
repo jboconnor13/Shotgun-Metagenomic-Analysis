@@ -22,7 +22,7 @@ sbatch Alpine_Environment_Creation.sh
 ```
 
 ##Database download
-The hostile and kraken databases need to be downloaded
+The hostile, kraken, and humann databases need to be downloaded
 
 ```bash
 chmod +x Alpine_Kraken_Database_Download.sh
@@ -30,6 +30,9 @@ sbatch Alpine_Kraken_Database_Download.sh
 
 chmod +x Alpine_Hostile_Database_Download.sh
 sbatch Alpine_Hostile_Database_Download.sh
+
+chmod +x Alpine_Humann_Database.Download.sh
+sbatch Alpine_Humann_Database.Download.sh
 ```
 
 ## Config, metadata, and adapter file adjustment 
