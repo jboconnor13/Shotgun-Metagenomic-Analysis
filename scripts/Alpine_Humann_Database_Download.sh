@@ -24,18 +24,11 @@ pip install humann
 #Now we create a directory for humann database
 mkdir -p ../ref_databases/humann
 
-#We create a subdirectories for Uniref and Chocophlan
-mkdir -p ../ref_databases/humann/chocophlan
-mkdir -p ../ref_databases/humann/uniref
-
 #We download Chocophlan
-humann_databases --download chocophlan full ../ref_databases/humann/chocophlan
+humann_databases --download chocophlan full ../ref_databases/humann
 
 #We download Uniref
-humann_databases --download uniref uniref90_diamond ../ref_databases/humann/uniref
-
-#We also create a subdirectory for the utility mapping
-mkdir -p ../ref_databases/humann/utility_mapping
+humann_databases --download uniref uniref90_diamond ../ref_databases/humann
 
 #We download the utlity mapping
-humann_databases --download utility_mapping full ../ref_databases/humann/utility_mapping
+humann_databases --download utility_mapping full ../ref_databases/humann

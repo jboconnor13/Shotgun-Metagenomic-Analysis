@@ -25,7 +25,7 @@ cd ..
 #This script runs the entire shotgun pipeline
 
 snakemake -s snakefile \
-    --latency-wait 1800 \
+    --latency-wait 3000 \
     --configfile config/config.yaml \
     --cores 8 \
     --use-conda \

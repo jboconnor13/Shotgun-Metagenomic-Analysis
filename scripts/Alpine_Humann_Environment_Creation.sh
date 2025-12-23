@@ -6,7 +6,7 @@
 #SBATCH --nodes=1 # use 1 node 
 #SBATCH --ntasks-per-node=1 
 #SBATCH --cpus-per-task=16
-#SBATCH --time=00:10:00 # Time limit days-hrs:min:sec
+#SBATCH --time=02:00:00 # Time limit days-hrs:min:sec
 #SBATCH --qos=normal
 #SBATCH --mem=10gb # Memory limit
 #SBATCH --mail-type=FAIL
@@ -16,14 +16,7 @@ module purge
 module load miniforge
 module load python/3.10.2
 
+cd ../envs
+
 #The environment is created
-conda create -n shotgun_analysis
-
-#The environment is activated
-conda activate shotgun_analysis
-
-#Snakemake is installed
-conda install -c conda-forge snakemake
-
-#The environment proiorities are set to strict for snakemake
-conda config --set channel_priority strict
+conda env create -f humann.yaml
