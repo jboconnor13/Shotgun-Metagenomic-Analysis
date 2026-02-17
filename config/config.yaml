@@ -19,6 +19,8 @@ kraken_db_loc: ref_databases/kraken
 chocoplhan_db_loc: ref_databases/humann/chocophlan
 uniref_db_loc: ref_databases/humann/uniref
 utility_mapping_db_loc: ref_databases/humann/utility_mapping
+metaphlan_db_loc: /pl/active/LozuponeLab/homi_databases/humann/metaphlan
+metaphlan_index: mpa_vJun23_CHOCOPhlAnSGB_202307
 
 
 #Bracken parameters
