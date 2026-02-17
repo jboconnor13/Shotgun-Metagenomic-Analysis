@@ -1,0 +1,29 @@
+name: assembly
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - metabat2
+  - das_tool
+  - checkm-genome
+  - drep
+  - prokka
+  - megahit
+  - trim-galore
+  - blast
+  - bwa
+  - diamond
+  - hmmer
+  - samtools
+  - bedtools
+  - seqkit
+  - kraken2
+  - bbmap
+  - seqtk
+  - flye
+  - minimap2
+  - mmseqs2
+  - dbcan

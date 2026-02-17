@@ -3,7 +3,7 @@
 #SBATCH --partition=amilan
 #SBATCH --account=amc-general
 #SBATCH --output=/scratch/alpine/joconnor@xsede.org/Shotgun-Metagenomic-Analysis/slurm_outputs/slurm-%j.out
-#SBATCH --job-name=SG
+#SBATCH --job-name=DM_SG
 #SBATCH --nodes=1 # use 1 node 
 #SBATCH --ntasks-per-node=1 
 #SBATCH --cpus-per-task=16
@@ -19,7 +19,6 @@ module load python/3.10.2
 
 conda activate shotgun_analysis
 
-conda config --set channel_priority flexible
 #First we go to the main directory to run the snakefile
 cd ..
 
@@ -27,8 +26,7 @@ cd ..
 
 snakemake -s snakefile \
     --latency-wait 3000 \
-    --configfile config/config.yaml \
+    --configfile /scratch/alpine/joconnor@xsede.org/DM_Shotgun/config/DM_config.yaml \
     --cores 8 \
     --use-conda \
-    --conda-prefix "/projects/.xsede.org/joconnor/.snakemake/conda/" \
-	--latency-wait 5000
+    --conda-prefix "/projects/.xsede.org/joconnor/.snakemake/conda/"
