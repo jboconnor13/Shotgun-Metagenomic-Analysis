@@ -26,7 +26,7 @@ cd ..
 
 snakemake -s snakefile \
     --latency-wait 3000 \
-    --configfile /scratch/alpine/joconnor@xsede.org/DM_Shotgun/config/DM_config.yaml \
+    --configfile /projects/alpine/joconnor@xsede.org/DM_Shotgun/config/DM_config.yaml \
     --cores 8 \
     --use-conda \
     --conda-prefix "/projects/.xsede.org/joconnor/.snakemake/conda/"
