@@ -11,16 +11,17 @@ adapter_dir: adapters/adapters.fa
 trim_left: 20
 trim_right: 140
 kmer_length: 20
+quality_threshold: 20
 
 #We indicate where the databases are stored 
-database_dir: /projects/joconnor@xsede.org/ref_databases
-hostile_dir:  /projects/joconnor@xsede.org/ref_databases/hostile/human-t2t-hla-argos985 
-kraken_db_loc: /projects/joconnor@xsede.org/ref_databases/kraken
-chocoplhan_db_loc: /projects/joconnor@xsede.org/ref_databases/humann/chocophlan
-uniref_db_loc: /projects/joconnor@xsede.org/ref_databases/humann/uniref
-utility_mapping_db_loc: /projects/joconnor@xsede.org/ref_databases/humann/utility_mapping
-metaphlan_db_loc: /pl/active/LozuponeLab/homi_databases/humann/metaphlan
-metaphlan_index: mpa_vJun23_CHOCOPhlAnSGB_202307
+database_dir: /pl/active/LozuponeLab/JOC_ref_databases
+hostile_dir:  /pl/active/LozuponeLab/JOC_ref_databases/hostile/human-t2t-hla-argos985 
+kraken_db_loc: /pl/active/LozuponeLab/JOC_ref_databases/kraken
+chocoplhan_db_loc: /pl/active/LozuponeLab/JOC_ref_databases/humann/chocophlan
+uniref_db_loc: /pl/active/LozuponeLab/JOC_ref_databases/humann/uniref
+utility_mapping_db_loc: /pl/active/LozuponeLab/JOC_ref_databases/humann/utility_mapping
+metaphlan_db_loc: /pl/active/LozuponeLab/JOC_ref_databases/humann/metaphlan
+metaphlan_index: mpa_vJan21_CHOCOPhlAnSGB_202103
 
 
 #Bracken parameters
