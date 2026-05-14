@@ -7,7 +7,7 @@
 #SBATCH --nodes=1 # use 1 node 
 #SBATCH --ntasks-per-node=1 
 #SBATCH --cpus-per-task=16
-#SBATCH --time=15:00:00 # Time limit days-hrs:min:sec
+#SBATCH --time=05:00:00 # Time limit days-hrs:min:sec
 #SBATCH --qos=normal
 #SBATCH --mem=150G
 #SBATCH --mail-type=FAIL
@@ -31,4 +31,5 @@ snakemake -s snakefile \
     --cores 8 \
     --use-conda \
     --conda-prefix "/projects/.xsede.org/joconnor/.snakemake/conda/" \
+    --profile /home/.xsede.org/joconnor/.config/snakemake/slurm \
 	--latency-wait 5000

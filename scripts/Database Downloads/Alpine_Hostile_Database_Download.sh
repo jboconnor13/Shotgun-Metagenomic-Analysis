@@ -19,9 +19,12 @@ module load python/3.10.2
 
 conda activate shotgun_analysis
 
-mkdir -p ../ref_databases/hostile
+#Head to the user specified directory
+cd "$1"
 
-cd ../ref_databases/hostile
+mkdir -p hostile
+
+cd hostile
 
 #The standard database is downloaded from the hostile
 wget https://objectstorage.uk-london-1.oraclecloud.com/n/lrbvkel2wjot/b/human-genome-bucket/o/human-t2t-hla-argos985.tar

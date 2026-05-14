@@ -17,9 +17,14 @@ module purge
 module load miniforge
 module load python/3.10.2
 
-mkdir -p ../ref_databases/kraken
+conda activate shotgun_analysis
 
-cd ../ref_databases/kraken
+#Head to the user specified directory
+cd "$1"
+
+mkdir -p kraken
+
+cd kraken
 
 #The standard database is downloaded from the kraken website
 wget https://genome-idx.s3.amazonaws.com/kraken/k2_standard_20251015.tar.gz

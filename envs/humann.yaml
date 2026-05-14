@@ -10,4 +10,5 @@ dependencies:
   - ca-certificates
   - openssl
   - metaphlan=3.0
+  - bowtie2=2.4.5
   - certifi
